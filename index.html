@@ -9,10 +9,73 @@
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Тег" />
+    <link rel="manifest" href="images/site.webmanifest" />
   </head>
   <body class="page">
-    <header class="header"></header>
-    <main></main>
+    <header class="header">
+      <div class="header__logo-group">
+        <h1 class="header__title html">&lt;/html&gt;</h1>
+        <span class="header__title tag">Закрывающий тег</span>
+      </div>
+    </header>
+    <main>
+      <section class="main__card">
+        <div class="card__title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </div>
+        <img
+          src="/images/card_image.png"
+          alt="Дом на колесах в лесу"
+          class="card__picture"
+        />
+        <p class="card__content">
+          Это было самое начало пути . На этом этапе важно было проникнуться
+          основами и настроиться на учёбу. И, возможно, подумать, как новые
+          знания могут повлиять на ваше будущее.
+        </p>
+        <button class="card__like-button">
+          <svg
+            class="like-icon"
+            width="39"
+            height="36"
+            viewBox="0 0 39 36"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 6H9V9H12V6Z" fill="black" />
+            <path d="M15 6H12V9H15V6Z" fill="black" />
+            <path d="M9 9H6V12H9V9Z" fill="black" />
+            <path d="M9 12H6V15H9V12Z" fill="black" />
+            <path d="M9 15H6V18H9V15Z" fill="black" />
+            <path d="M18 6H15V9H18V6Z" fill="black" />
+            <path d="M12 18H9V21H12V18Z" fill="black" />
+            <path d="M15 21H12V24H15V21Z" fill="black" />
+            <path d="M18 24H15V27H18V24Z" fill="black" />
+            <path d="M27 6H30V9H27V6Z" fill="black" />
+            <path d="M24 6H27V9H24V6Z" fill="black" />
+            <path d="M30 9H33V12H30V9Z" fill="black" />
+            <path d="M30 12H33V15H30V12Z" fill="black" />
+            <path d="M30 15H33V18H30V15Z" fill="black" />
+            <path d="M21 6H24V9H21V6Z" fill="black" />
+            <path d="M27 18H30V21H27V18Z" fill="black" />
+            <path d="M24 21H27V24H24V21Z" fill="black" />
+            <path d="M21 24H24V27H21V24Z" fill="black" />
+            <path d="M21 9H18V12H21V9Z" fill="black" />
+            <path d="M21 27H18V30H21V27Z" fill="black" />
+          </svg>
+          <span class="button__text">Like</span>
+        </button>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

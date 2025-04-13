@@ -1,1 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font-family: Inter-Variable, sans-serif;
+  --accent-font-family: PressStart2P, arial;
+  --main-font-size: 18px;
+  --main-font-weight: 400;
+  --bold-font-weight: 700;
+  --header-font-size-html: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-font-size-tag: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --header-main-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) 0
+    clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+}
