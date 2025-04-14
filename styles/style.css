@@ -29,12 +29,14 @@
 
 .header {
   margin-block-start: 102px;
+  margin-block-end: 107px;
   border: 2px solid var(--Themes-mainColor, #000);
   background: var(--Themes-background, #fff);
-  padding: var(--header-main-padding);
 }
 
 .header__logo-group {
+  padding-inline: var(--header-padding);
+  padding-block: var(--header-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,29 +53,72 @@
   font-size: var(--header-font-size-tag);
 }
 
+.card__title {
+  padding: 5px 10px;
+  font-weight: var(--bold-font-weight);
+  font-size: var(--main-font-size);
+}
+
 .card__picture {
-  inline-size: 696px;
+  inline-size: 100%;
   block-size: 696px;
 }
 
-.main__card {
-  border: 2px solid var(--Themes-mainColor, #000);
-  padding: var(--header-main-padding);
+.card__content {
+  padding-block-end: 25px;
   display: flex;
   flex-direction: column;
+  gap: 27px;
+}
+
+.card__content-text {
+  padding-inline: 25px;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+}
+
+.main__card {
+  margin-block-end: 54px;
+  position: relative;
+  inline-size: 696px;
+  border: 2px solid var(--Themes-mainColor, #000);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.watermark {
+  right: 25px;
+  top: 30px;
+  content: "";
+  position: absolute;
+  font-family: var(--accent-font-family);
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--Themes-mainColor, #000);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--Themes-background, #fff);
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 .card__like-button {
+  --main-font-size: 14px;
+  font-size: var(--main-font-size);
   outline: none;
   border: none;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 12px;
 }
 
 .button__text {
+  font-family: var(--accent-font-family);
   border: 2px solid var(--Themes-mainColor, #000);
   display: flex;
   width: 130px;
@@ -83,4 +128,16 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+}
+
+.button__memory {
+  --main-font-size: 14px;
+  font-size: var(--main-font-size);
+  outline: none;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #fff;
 }
