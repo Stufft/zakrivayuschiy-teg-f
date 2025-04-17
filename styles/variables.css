@@ -9,6 +9,15 @@
   --header-font-size-tag: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --header-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
   --main-line-height: 21px;
+  --main-gap: 20px;
   --text-stroke-color: #fff;
   --card-picture: url(../images/card_image.png);
+  --bg-color: #fff;
+  --border: 2px solid #000;
+  --main-color: #000;
+  --secondary-font-size: 14px;
+  --fill-main-color: #f00;
+  --fill-sparks: #f00;
+  --fill-accent-core: #000;
+  --fill-heart-contour: #000;
 }
