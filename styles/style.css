@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   background-image: var(--background-gradient);
-  background-position: fixed;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -44,11 +44,11 @@
 }
 
 .tag {
-  font-size: var(--header-font-size-tag);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
 .clamp-inline {
-  inline-size: clamp(20rem, 13.2143rem + 33.9286vw, 43.75rem);
+  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
 }
 
 .main {
@@ -134,8 +134,8 @@
 }
 
 .watermark {
-  right: 25px;
-  top: 60px;
+  top: 57px;
+  right: clamp(0.75rem, 0.4639rem + 1.2207vw, 1.5625rem);
   content: "";
   position: absolute;
   font-family: var(--accent-font-family);
@@ -284,16 +284,14 @@ dialog::backdrop {
 }
 
 .button__memory {
+  display: block;
   font-size: 14px;
   line-height: 150%;
-  display: block;
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   padding-block: 15px;
-  justify-content: center;
-  align-items: center;
   gap: var(--main-gap);
   border: var(--border);
-  margin-block-end: 105px;
+  margin-block-end: 100px;
   cursor: pointer;
   background-color: var(--bg-color);
   color: var(--main-color);
@@ -427,16 +425,19 @@ dialog::backdrop {
   }
 
   .card__icon-button {
-    --main-gap: 8px;
     line-height: 90%;
   }
 
   .floppy__icon {
     inline-size: 28px;
   }
-}
 
-.button__memory {
-  display: flex;
-  flex-direction: column;
+  .button__memory {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 80px;
+    line-height: 90%;
+    padding-block: 15px;
+    gap: 8px;
+  }
 }
