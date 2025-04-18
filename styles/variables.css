@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   --main-font-family: Inter-Variable, sans-serif;
-  --accent-font-family: PressStart2P, arial;
+  --accent-font-family: PressStart2P, monospace;
   --main-font-size: 18px;
   --main-font-weight: 400;
   --bold-font-weight: 700;
@@ -13,6 +13,7 @@
   --text-stroke-color: #fff;
   --card-picture: url(../images/card_image.png);
   --bg-color: #fff;
+  --web: #fff;
   --border: 2px solid #000;
   --main-color: #000;
   --secondary-font-size: 14px;
@@ -20,4 +21,11 @@
   --fill-sparks: #f00;
   --fill-accent-core: #000;
   --fill-heart-contour: #000;
+  --background-gradient: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 2px,
+      rgb(0 0 0 / 0) 2px 4px
+    ),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
 }

@@ -14,31 +14,23 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
-  font-variation-settings: var(--main-font-weight);
+  font-variation-settings: "wght" var(--main-font-weight);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: repeating-linear-gradient(
-      90deg,
-      #d3d3d3 0 2px,
-      rgb(0 0 0 / 0) 2px 4px
-    ),
-    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
-    linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+  background-image: var(--background-gradient);
   background-position: fixed;
   background-size: cover;
 }
 
 .header {
-  margin-block-start: 102px;
-  margin-block-end: 100px;
+  margin-block: 100px;
   border: 2px solid var(--main-color);
   background: var(--bg-color);
 }
 
 .header__logo-group {
-  padding-inline: var(--header-padding);
-  padding-block: var(--header-padding);
+  padding: var(--header-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,8 +47,18 @@
   font-size: var(--header-font-size-tag);
 }
 
+.clamp-inline {
+  inline-size: clamp(20rem, 13.2143rem + 33.9286vw, 43.75rem);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .card__title {
-  border-bottom: var(--main-color) solid 2px;
+  border-bottom: var(--border);
   padding: 5px 10px;
   font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
@@ -66,7 +68,6 @@
   background-image: var(--card-picture);
   background-position: right;
   background-size: cover;
-  inline-size: 100%;
   block-size: 696px;
 }
 
@@ -118,17 +119,18 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  padding-block-end: 25px;
 }
 
 .main__card {
-  margin-block-end: 54px;
   position: relative;
-  inline-size: 696px;
   border: 2px solid var(--main-color);
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
+}
+
+.main__card:last-of-type {
+  margin-block-end: 50px;
 }
 
 .watermark {
@@ -140,17 +142,19 @@
   font-size: 14px;
   text-transform: uppercase;
   color: var(--main-color);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--text-stroke-color);
+  text-shadow: -1px -1px var(--text-stroke-color),
+    1px -1px var(--text-stroke-color), -1px 1px var(--text-stroke-color),
+    1px 1px var(--text-stroke-color);
   opacity: 0.5;
   z-index: 1;
   mix-blend-mode: hard-light;
 }
 
-@supports (text-stroke: 1px var(--text-stroke-color)) {
+@supports (-webkit-text-stroke: var(--text-stroke-color)) {
   .watermark {
-    -webkit-text-stroke: 2px var(--text-stroke-color);
-    text-stroke: 2px var(--text-stroke-color);
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-stroke: 1px var(--text-stroke-color);
   }
 }
 
@@ -201,8 +205,7 @@
 }
 
 .like-icon {
-  block-size: 38px;
-  transform-origin: center center;
+  transform-origin: center;
 }
 
 .card__icon-button {
@@ -222,9 +225,9 @@
 
 .card__like-button {
   border: var(--border);
-  padding: 0;
-  min-block-size: 38px;
-  min-inline-size: 130px;
+  padding: 10px 17px;
+  block-size: 38px;
+  inline-size: 130px;
   text-transform: capitalize;
 }
 
@@ -235,7 +238,6 @@
   outline: none;
   padding-inline-end: 25px;
   padding-block-end: 25px;
-  gap: 12px;
 }
 
 body:has(dialog[open]) {
@@ -251,9 +253,9 @@ dialog::backdrop {
   background-color: rgb(0 0 0 / 0.75);
 }
 
-.save {
+.button__memory-dialog {
   display: flex;
-  gap: var(--main-gap);
+  gap: 20px;
 }
 
 #save-memory {
@@ -284,7 +286,8 @@ dialog::backdrop {
 .button__memory {
   font-size: 14px;
   line-height: 150%;
-  display: flex;
+  display: block;
+  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   padding-block: 15px;
   justify-content: center;
   align-items: center;
@@ -407,6 +410,10 @@ dialog::backdrop {
     inline-size: 100%;
   }
 
+  .main {
+    inline-size: 100%;
+  }
+
   .header__logo-group {
     padding-inline: 0;
   }
@@ -421,13 +428,15 @@ dialog::backdrop {
 
   .card__icon-button {
     --main-gap: 8px;
-    flex-direction: column;
-    padding: 15px 20px;
-    gap: var(--main-gap);
     line-height: 90%;
   }
 
   .floppy__icon {
     inline-size: 28px;
   }
+}
+
+.button__memory {
+  display: flex;
+  flex-direction: column;
 }
