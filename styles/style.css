@@ -44,11 +44,11 @@
 }
 
 .tag {
-  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-size: var(--header-font-size-tag);
 }
 
 .clamp-inline {
-  inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  inline-size: var(--page-inline-size);
 }
 
 .main {
@@ -60,15 +60,22 @@
 .card__title {
   border-bottom: var(--border);
   padding: 5px 10px;
-  font-weight: var(--bold-font-weight);
+  font-variation-settings: "wght" 700;
   font-size: var(--main-font-size);
 }
 
-.card__picture {
-  background-image: var(--card-picture);
-  background-position: right;
-  background-size: cover;
+.card__content-image {
+  position: relative;
+  inline-size: 100%;
+  margin: 0;
   block-size: 696px;
+}
+
+.card__picture {
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: right;
+  block-size: 100%;
 }
 
 .start {
@@ -133,14 +140,13 @@
   margin-block-end: 50px;
 }
 
-
 .watermark {
-  top: 57px;
+  top: 24px;
   right: clamp(0.75rem, 0.4639rem + 1.2207vw, 1.5625rem);
   content: "";
   position: absolute;
   font-family: var(--accent-font-family);
-  font-size: 14px;
+  font-size: var(--accent-font-size);
   text-transform: uppercase;
   color: var(--main-color);
   text-shadow: -1px -1px var(--text-stroke-color),
@@ -241,7 +247,7 @@
   padding-block-end: 25px;
 }
 
-body:has(dialog[open]) {
+.page:has(dialog[open]) {
   overflow: hidden;
 }
 
@@ -261,7 +267,7 @@ dialog::backdrop {
 
 #save-memory {
   font-family: var(--accent-font-family);
-  font-size: 14px;
+  font-size: var(--accent-font-size);
   line-height: 150%;
   display: flex;
   flex-direction: column;
@@ -286,11 +292,10 @@ dialog::backdrop {
 
 .button__memory {
   display: block;
-  font-size: 14px;
-  line-height: 150%;
-  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
-  padding-block: 15px;
-  gap: var(--main-gap);
+  font-size: var(--accent-font-size);
+  line-height: 90%;
+  inline-size: var(--footer-inline-size);
+  padding-block: 14px;
   border: var(--border);
   margin-block-end: 100px;
   cursor: pointer;
@@ -405,10 +410,6 @@ dialog::backdrop {
     max-width: 375px;
   }
 
-.main__card:first-of-type .watermark {
-top: 77px;
-}
-
   .header {
     inline-size: 100%;
   }
@@ -421,8 +422,8 @@ top: 77px;
     padding-inline: 0;
   }
 
-  .card__picture {
-    block-size: 371px;
+  .card__content-image {
+    block-size: 370px;
   }
 
   .main__card {

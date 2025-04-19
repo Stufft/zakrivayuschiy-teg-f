@@ -2,21 +2,22 @@
 :root {
   --main-font-family: Inter-Variable, sans-serif;
   --accent-font-family: PressStart2P, monospace;
+  --page-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --main-font-size: 18px;
   --main-font-weight: 400;
   --bold-font-weight: 700;
   --header-font-size-html: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-font-size-tag: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --header-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
-  --main-line-height: 21px;
+  --footer-inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  --main-line-height: 117%;
   --main-gap: 20px;
   --text-stroke-color: #fff;
-  --card-picture: url(../images/card_image.png);
   --bg-color: #fff;
   --web: #fff;
   --border: 2px solid #000;
   --main-color: #000;
-  --secondary-font-size: 14px;
+  --accent-font-size: 14px;
   --fill-main-color: #f00;
   --fill-sparks: #f00;
   --fill-accent-core: #000;
