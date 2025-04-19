@@ -133,6 +133,7 @@
   margin-block-end: 50px;
 }
 
+
 .watermark {
   top: 57px;
   right: clamp(0.75rem, 0.4639rem + 1.2207vw, 1.5625rem);
@@ -403,6 +404,10 @@ dialog::backdrop {
   .page {
     max-width: 375px;
   }
+
+.main__card:first-of-type .watermark {
+top: 77px;
+}
 
   .header {
     inline-size: 100%;
