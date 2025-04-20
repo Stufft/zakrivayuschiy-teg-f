@@ -8,13 +8,12 @@
   --bold-font-weight: 700;
   --header-font-size-html: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-font-size-tag: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  --header-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+  --header-padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
   --footer-inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   --main-line-height: 117%;
   --main-gap: 20px;
   --text-stroke-color: #fff;
   --bg-color: #fff;
-  --web: #fff;
   --border: 2px solid #000;
   --main-color: #000;
   --accent-font-size: 14px;

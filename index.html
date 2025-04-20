@@ -26,31 +26,22 @@
     <link rel="manifest" href="images/site.webmanifest" />
   </head>
   <body class="page">
-    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
-      <symbol id="floppy">
-        <path
-          d="M.5.5h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm33-36v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm30 3v3h-3v-3zm-27 3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm21-3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm-6-3v3h-3v-3zm0-3v3h-3v-3zm0 6v3h-3v-3zm6 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm24 9v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm24 3v3h-3v-3zm-24 0v3h-3v-3zm0 3v3h-3v-3zm24 0v3h-3v-3zm3 3v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm-3 0v3h-3v-3zm33 3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3zm0-3h-3v-3h3z"
-        />
-      </symbol>
-    </svg>
-    <header class="header clamp-inline">
-      <div class="header__logo-group">
-        <h1 class="header__title html">&lt;/html&gt;</h1>
-        <span class="header__title tag">Закрывающий тег</span>
-      </div>
+    <header class="header page__inline-size">
+      <h1 class="header__title">&lt;/html&gt;</h1>
+      <p class="header__subtitle">Закрывающий тег</p>
     </header>
-    <main class="main clamp-inline">
-      <section class="main__card">
+    <main class="main page__inline-size">
+      <article class="main__card">
         <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="card__content">
           <figure class="card__content-image">
-            <span class="watermark">&lt;/html&gt;</span>
+            <span class="watermark" aria-hidden="true">&lt;/html&gt;</span>
             <img
               src="./images/card_image.png"
               alt="Дом на колесах в лесу"
-              class="card__picture start"
+              class="card__picture filter-opacity"
               loading="lazy"
             />
           </figure>
@@ -65,7 +56,7 @@
             </p>
           </div>
           <div class="card__button-main">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -77,7 +68,7 @@
                 <g clip-path="url(#clip0_0_1575)">
                   <g class="heart">
                     <path
-                      class="countour"
+                      class="contour"
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                       fill="black"
                     />
@@ -105,8 +96,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
+      </article>
+      <article class="main__card">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__content">
           <figure class="card__content-image">
@@ -114,7 +105,7 @@
             <img
               src="./images/card_image.png"
               alt="Дом на колесах в лесу"
-              class="card__picture clean"
+              class="card__picture filter-contrast"
               loading="lazy"
             />
           </figure>
@@ -133,7 +124,7 @@
           </div>
 
           <div class="card__button-main">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -145,7 +136,7 @@
                 <g clip-path="url(#clip0_0_1575)">
                   <g class="heart">
                     <path
-                      class="countour"
+                      class="contour"
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                       fill="black"
                     />
@@ -173,8 +164,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
+      </article>
+      <article class="main__card">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__content">
           <figure class="card__content-image">
@@ -182,7 +173,7 @@
             <img
               src="./images/card_image.png"
               alt="Дом на колесах в лесу"
-              class="card__picture no-way"
+              class="card__picture filter-saturate"
               loading="lazy"
             />
           </figure>
@@ -197,7 +188,7 @@
             </p>
           </div>
           <div class="card__button-main">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -209,7 +200,7 @@
                 <g clip-path="url(#clip0_0_1575)">
                   <g class="heart">
                     <path
-                      class="countour"
+                      class="contour"
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                       fill="black"
                     />
@@ -237,16 +228,18 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
+      </article>
+      <article class="main__card">
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__content">
           <figure class="card__content-image">
-            <span class="watermark lowercase">&lt;desigions&gt;</span>
+            <span class="watermark lowercase__watermark"
+              >&lt;desigions&gt;</span
+            >
             <img
               src="./images/card_image.png"
               alt="Дом на колесах в лесу"
-              class="card__picture chase"
+              class="card__picture filter-hue-rotate"
               loading="lazy"
             />
           </figure>
@@ -263,7 +256,7 @@
             </p>
           </div>
           <div class="card__button-main">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -274,7 +267,7 @@
               >
                 <g class="heart">
                   <path
-                    class="countour"
+                    class="contour"
                     d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                     fill="black"
                   />
@@ -303,16 +296,16 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
+      </article>
+      <article class="main__card">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__content">
           <figure class="card__content-image">
-            <span class="watermark lowercase">care</span>
+            <span class="watermark lowercase__watermark">care</span>
             <img
               src="./images/card_image.png"
               alt="Дом на колесах в лесу"
-              class="card__picture nearby"
+              class="card__picture filter-multiple-hue"
               loading="lazy"
             />
           </figure>
@@ -330,7 +323,7 @@
             </p>
           </div>
           <div class="card__button-main">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -342,7 +335,7 @@
                 <g clip-path="url(#clip0_0_1575)">
                   <g class="heart">
                     <path
-                      class="countour"
+                      class="contour"
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                       fill="black"
                     />
@@ -370,16 +363,16 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
+      </article>
+      <article class="main__card">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__content">
           <figure class="card__content-image">
-            <span class="watermark lowercase">&lt;support&gt;</span>
+            <span class="watermark lowercase__watermark">&lt;support&gt;</span>
             <img
               src="./images/card_image.png"
               alt="Дом на колесах в лесу"
-              class="card__picture workarounds"
+              class="card__picture filter-grayscale"
               loading="lazy"
             />
           </figure>
@@ -394,7 +387,7 @@
             </p>
           </div>
           <div class="card__button-main">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -406,7 +399,7 @@
                 <g clip-path="url(#clip0_0_1575)">
                   <g class="heart">
                     <path
-                      class="countour"
+                      class="contour"
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                       fill="black"
                     />
@@ -434,16 +427,18 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
+      </article>
+      <article class="main__card">
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__content">
           <figure class="card__content-image">
-            <span class="watermark lowercase">&lt;lifes-style: none;&gt;</span>
+            <span class="watermark lowercase__watermark"
+              >&lt;lifes-style: none;&gt;</span
+            >
             <img
               src="./images/card_image.png"
               alt="Дом на колесах в лесу"
-              class="card__picture hands-go-down"
+              class="card__picture filter-blur"
               loading="lazy"
             />
           </figure>
@@ -460,7 +455,7 @@
             </p>
           </div>
           <div class="card__button-main">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -472,7 +467,7 @@
                 <g clip-path="url(#clip0_0_1575)">
                   <g class="heart">
                     <path
-                      class="countour"
+                      class="contour"
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                       fill="black"
                     />
@@ -500,16 +495,18 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="main__card">
+      </article>
+      <article class="main__card">
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__content">
           <figure class="card__content-image">
-            <span class="watermark lowercase">&lt;experiance&gt;</span>
+            <span class="watermark lowercase__watermark"
+              >&lt;experiance&gt;</span
+            >
             <img
               src="./images/card_image.png"
               alt="Дом на колесах в лесу"
-              class="card__picture iam-here"
+              class="card__picture filter-multiple-contrast"
               loading="lazy"
             />
           </figure>
@@ -528,7 +525,7 @@
             </p>
           </div>
           <div class="card__button-main">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="39"
@@ -540,7 +537,7 @@
                 <g clip-path="url(#clip0_0_1575)">
                   <g class="heart">
                     <path
-                      class="countour"
+                      class="contour"
                       d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
                       fill="black"
                     />
@@ -568,9 +565,7 @@
             </button>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
+      </article>
       <button
         type="button"
         onclick="window['save-memory'].showModal();"
@@ -578,36 +573,36 @@
         class="button__memory button"
       >
         <svg
-          xmlns="http://www.w3.org/2000/svg"
           class="floppy__icon"
+          xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 40 40"
         >
-          <use href="#floppy" />
+          <use href="./svg/floppy.svg#save-icon"></use>
         </svg>
 
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog id="save-memory">
-        <span class="button__memory-dialog save">
+      <dialog id="save-memory" class="dialog__main">
+        <div class="dialog__content">
           <svg
             class="floppy__icon-big"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 40 40"
           >
-            <use href="#floppy" />
+            <use href="./svg/floppy.svg#save-icon"></use>
           </svg>
           Вставьте<br />
-          дискету, чтобы <br />продолжить</span
-        >
+          дискету, чтобы <br />продолжить
+        </div>
         <button
           class="button__memory-dialog save__memory-button button"
           type="button"
           onclick="window['save-memory'].close()"
         >
-          <span class="button__text">ОК</span>
+          <span class="button__text">ок</span>
         </button>
       </dialog>
-    </footer>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
